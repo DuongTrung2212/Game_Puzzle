@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{48D92398-A73D-4AC5-8580-EE94D555E9D7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DuongVanTrung_GameXepHinh</RootNamespace>
+    <AssemblyName>DuongVanTrung_GameXepHinh</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmTrung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTrung.Designer.cs">
+      <DependentUpon>frmTrung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmTrung.resx">
+      <DependentUpon>frmTrung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3x3\image1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3x3\image8.jpg" />
+    <None Include="Resources\3x3\image7.jpg" />
+    <None Include="Resources\3x3\image6.jpg" />
+    <None Include="Resources\3x3\image5.jpg" />
+    <None Include="Resources\3x3\image4.jpg" />
+    <None Include="Resources\3x3\image3.jpg" />
+    <None Include="Resources\3x3\image2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3x3\image9.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\4x3\img1.png" />
+    <Content Include="Resources\4x3\imga0.png" />
+    <Content Include="Resources\4x3\imga1.png" />
+    <Content Include="Resources\4x3\imga2.png" />
+    <Content Include="Resources\4x3\img2.png" />
+    <Content Include="Resources\4x3\img3.png" />
+    <Content Include="Resources\4x3\img4.png" />
+    <Content Include="Resources\4x3\img5.png" />
+    <Content Include="Resources\4x3\img6.png" />
+    <Content Include="Resources\4x3\img7.png" />
+    <Content Include="Resources\4x3\img8.png" />
+    <Content Include="Resources\4x3\img9.png" />
+    <Content Include="Resources\5x3\img-1.png" />
+    <Content Include="Resources\5x3\img-a0.png" />
+    <Content Include="Resources\5x3\img-a1.png" />
+    <Content Include="Resources\5x3\img-a2.png" />
+    <Content Include="Resources\5x3\img-a3.png" />
+    <Content Include="Resources\5x3\img-a4.png" />
+    <Content Include="Resources\5x3\img-a5.png" />
+    <Content Include="Resources\5x3\img-2.png" />
+    <Content Include="Resources\5x3\img-3.png" />
+    <Content Include="Resources\5x3\img-4.png" />
+    <Content Include="Resources\5x3\img-5.png" />
+    <Content Include="Resources\5x3\img-6.png" />
+    <Content Include="Resources\5x3\img-7.png" />
+    <Content Include="Resources\5x3\img-8.png" />
+    <Content Include="Resources\5x3\img-9.png" />
+    <Content Include="Resources\3x3.jpg" />
+    <Content Include="Resources\4x3.jpg" />
+    <Content Include="Resources\5x3.jpg" />
+    <Content Include="Resources\5x4\img-1.png" />
+    <Content Include="Resources\5x4\img-a0.png" />
+    <Content Include="Resources\5x4\img-a1.png" />
+    <Content Include="Resources\5x4\img-a2.png" />
+    <Content Include="Resources\5x4\img-a3.png" />
+    <Content Include="Resources\5x4\img-a4.png" />
+    <Content Include="Resources\5x4\img-a5.png" />
+    <Content Include="Resources\5x4\img-a6.png" />
+    <Content Include="Resources\5x4\img-a7.png" />
+    <Content Include="Resources\5x4\img-a8.png" />
+    <Content Include="Resources\5x4\img-a9.png" />
+    <Content Include="Resources\5x4\img-2.png" />
+    <Content Include="Resources\5x4\img-b0.png" />
+    <Content Include="Resources\5x4\img-3.png" />
+    <Content Include="Resources\5x4\img-4.png" />
+    <Content Include="Resources\5x4\img-5.png" />
+    <Content Include="Resources\5x4\img-6.png" />
+    <Content Include="Resources\5x4\img-7.png" />
+    <Content Include="Resources\5x4\img-8.png" />
+    <Content Include="Resources\5x4\img-9.png" />
+    <Content Include="Resources\5x4.jpg" />
+    <Content Include="Resources\6x6.jpg" />
+    <Content Include="Resources\6x6\img-1.jpeg" />
+    <Content Include="Resources\6x6\img-a0.jpeg" />
+    <Content Include="Resources\6x6\img-a1.jpeg" />
+    <Content Include="Resources\6x6\img-a2.jpeg" />
+    <Content Include="Resources\6x6\img-a3.jpeg" />
+    <Content Include="Resources\6x6\img-a4.jpeg" />
+    <Content Include="Resources\6x6\img-a5.jpeg" />
+    <Content Include="Resources\6x6\img-a6.jpeg" />
+    <Content Include="Resources\6x6\img-a7.jpeg" />
+    <Content Include="Resources\6x6\img-a8.jpeg" />
+    <Content Include="Resources\6x6\img-a9.jpeg" />
+    <Content Include="Resources\6x6\img-2.jpeg" />
+    <Content Include="Resources\6x6\img-b0.jpeg" />
+    <Content Include="Resources\6x6\img-b1.jpeg" />
+    <Content Include="Resources\6x6\img-b2.jpeg" />
+    <Content Include="Resources\6x6\img-b3.jpeg" />
+    <Content Include="Resources\6x6\img-b4.jpeg" />
+    <Content Include="Resources\6x6\img-b5.jpeg" />
+    <Content Include="Resources\6x6\img-b6.jpeg" />
+    <Content Include="Resources\6x6\img-b7.jpeg" />
+    <Content Include="Resources\6x6\img-b8.jpeg" />
+    <Content Include="Resources\6x6\img-b9.jpeg" />
+    <Content Include="Resources\6x6\img-3.jpeg" />
+    <Content Include="Resources\6x6\img-c0.jpeg" />
+    <Content Include="Resources\6x6\img-c1.jpeg" />
+    <Content Include="Resources\6x6\img-c2.jpeg" />
+    <Content Include="Resources\6x6\img-c3.jpeg" />
+    <Content Include="Resources\6x6\img-c4.jpeg" />
+    <Content Include="Resources\6x6\img-c5.jpeg" />
+    <Content Include="Resources\6x6\img-c6.jpeg" />
+    <Content Include="Resources\6x6\img-4.jpeg" />
+    <Content Include="Resources\6x6\img-5.jpeg" />
+    <Content Include="Resources\6x6\img-6.jpeg" />
+    <Content Include="Resources\6x6\img-7.jpeg" />
+    <Content Include="Resources\6x6\img-8.jpeg" />
+    <Content Include="Resources\6x6\img-9.jpeg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
